@@ -16,14 +16,14 @@ const monthNames = [
 ];
 
 interface CalendarProps {
-  value?: Date;
+  value?: string;
   onChange?: (date: Date) => void;
 }
 
 const Calendar: FC<CalendarProps> = (props) => {
-  const { value = new Date(), onChange } = props;
+  const { value, onChange } = props;
 
-  const [date, setDate] = useState(value);
+  const [date, setDate] = useState(new Date(value || new Date()));
 
   // 上一个月
   const handlePrevMonth = () => {

@@ -4,6 +4,7 @@ export default function HomePage() {
   return (
     <div>
       <Calendar
+        // value={"2021-10-10"}
         onChange={() => {
           console.log("ss");
         }}
