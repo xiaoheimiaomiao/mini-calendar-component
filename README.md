@@ -31,7 +31,7 @@ export default function HomePage() {
 ```
 
 效果展示
-![alt text](image.png)
+![alt text](./src/assets/image.png)
 
 ## 参数说明
 
